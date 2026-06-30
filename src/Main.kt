@@ -3,6 +3,6 @@
 fun main() {
     val x = 11
     val y = 12
-   val areBothEven =  x % 2 == 0 && y % 2 ==0
-    println(areBothEven)// here we are using and operator if one conidion is true and other is false then the result is false and if both true then a result are true this is operator are use for this kind of operation
+   val areBothEven =  x % 2 == 0 || y % 2 ==0
+    println(areBothEven)// here we are using or operator if one conidion is true then the result is true because it need only one true result if both are true then final result are also true if one is true then also final result is true
     }
