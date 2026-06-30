@@ -4,5 +4,6 @@ fun main() {
     var x  = 10
     val y = 20
     x += 5
+    x -= 6
     println(x + y)
     }
