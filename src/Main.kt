@@ -3,9 +3,9 @@
 fun main() {
 println("Enter a number:")
     val input = readln()
-    val inputasInteger = input.toIntOrNull()?.inc()
+    val inputasInteger = input.toIntOrNull()?.rem(2)?.equals(0)
 
 
-    println("The Increment Number is $inputasInteger")
+    println("Is Number Even  $inputasInteger")
 
 }
