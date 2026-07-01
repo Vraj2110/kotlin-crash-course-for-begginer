@@ -5,13 +5,14 @@ fun main() {
     val input = readln()
     val inputasInteger = input.toIntOrNull()
 
-    if (inputasInteger != null) {
-        val output = when{
-            inputasInteger % 2 == 0 -> "The Number Is Even\n"
-            else -> "The Number Is Odd\n"
+
+        val output = when(inputasInteger){
+            null -> "Enter The Valid Number"
+            5 -> "this is a five!"
+            3 -> "This is a three!"
+            in 10..30 -> "This Number Is Between 10 to 30"
+             1 -> "This Number Is Smallest"
+            else -> "The Number Is Odd And At least 55"
             }
         println(output)
-        }else{
-            println("Enter The Valid Value")
-    }
     }
