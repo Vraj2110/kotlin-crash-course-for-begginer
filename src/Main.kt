@@ -3,7 +3,7 @@
 fun main() {
 println("Enter a number:")
     val input = readln()
-    val inputasInteger = input.toInt()
+    val inputasInteger = input.toIntOrNull() ?: 0
 
     val isEven = inputasInteger % 2 == 0
     println("Is the Number even? $isEven")
