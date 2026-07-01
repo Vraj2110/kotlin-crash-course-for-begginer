@@ -7,7 +7,12 @@ println("Enter a number:")
 
     if (inputasInteger != null){
         val IsEven = inputasInteger % 2 == 0
-        println("Is Even $IsEven")
+
+        if (IsEven){
+            println("The Number Is Even")
+        }else{
+            println("The Number is Odd")
+        }
     }else{
         println("Invalid Input Enter a Integer")
     }
