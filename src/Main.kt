@@ -8,5 +8,7 @@ println("Enter a number:")
     if (inputasInteger != null){
         val IsEven = inputasInteger % 2 == 0
         println("Is Even $IsEven")
+    }else{
+        println("Invalid Input Enter a Integer")
     }
 }
