@@ -3,9 +3,10 @@
 fun main() {
 println("Enter a number:")
     val input = readln()
-    val inputasInteger = input.toIntOrNull()?.rem(2)?.equals(0)
+    val inputasInteger = input.toIntOrNull()
 
-
-    println("Is Number Even  $inputasInteger")
-
+    if (inputasInteger != null){
+        val IsEven = inputasInteger % 2 == 0
+        println("Is Even $IsEven")
+    }
 }
