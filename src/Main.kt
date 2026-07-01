@@ -6,13 +6,12 @@ println("Enter a number:")
     val inputasInteger = input.toIntOrNull()
 
     if (inputasInteger != null){
-        val IsEven = inputasInteger % 2 == 0
-
-        if (IsEven){
-            println("The Number Is Even")
+        val output =  if(inputasInteger % 2 == 0){
+            "The Number Is Even!"
         }else{
-            println("The Number is Odd")
+            "The Number Is Odd!"
         }
+        println(output)
     }else{
         println("Invalid Input Enter a Integer")
     }
