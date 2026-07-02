@@ -3,6 +3,7 @@
 fun main() {
     println("Enter a number:")
     val input = readln()
+    throw Exception("Dude wtf did u pass there?")
     val inputasInteger = try {
 
         input.toInt()
