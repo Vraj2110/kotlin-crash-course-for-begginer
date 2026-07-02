@@ -3,7 +3,12 @@
 fun main() {
     println("Enter a number:")
     val input = readln()
-    val inputasInteger = input.toIntOrNull()
+    val inputasInteger = try {
+
+        input.toInt()
+    }catch (e:NumberFormatException){
+        0
+    }
 
 
         val output = when(inputasInteger){
@@ -12,7 +17,7 @@ fun main() {
             3 -> "This is a three!"
             in 10..30 -> "This Number Is Between 10 to 30"
              1 -> "This Number Is Smallest"
-            else -> "The Number Is Odd And At least 55"
+            else -> "i dont know what to print"
             }
         println(output)
     }
